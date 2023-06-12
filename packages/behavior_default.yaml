@@ -159,6 +159,13 @@ sensor:
         - light.turn_on:
             id: my_light
             brightness: !lambda return x;
+  # Uptime sensor
+  - platform: uptime
+    name: ${sensor_uptime}
+  # WiFi Signal sensor
+  - platform: wifi_signal
+    name: ${sensor_wifi_signal}
+    update_interval: 60s
 
 # This text sensor propagates the currently active light mode.
 # The possible light modes are: "off", "rgb", "white" and "night".
@@ -166,3 +173,14 @@ text_sensor:
   - platform: xiaomi_bslamp2
     name: ${light_mode_text_sensor_name}
     id: my_light_mode
+  # Expose ESPHome version as sensor
+  - platform: version
+    name: ${text_sensor_version}
+  # Expose WiFi information as sensor
+  - platform: wifi_info
+    ip_address:
+      name: ${text_sensor_ip}
+    ssid:
+      name: ${text_sensor_ssid}
+    bssid:
+      name: ${text_sensor_bssid}
