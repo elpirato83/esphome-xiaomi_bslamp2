@@ -14,6 +14,7 @@ substitutions:
   text_sensor_bssid: ${friendly_name} - BSSID
   sensor_uptime: ${friendly_name} - Uptime
   sensor_wifi_signal: ${friendly_name} - WiFi Signal
+  switch_restart: ${friendly_name} - Restart
   default_transition_length: 800ms
 
 # --------------------------------------------------------------------------
