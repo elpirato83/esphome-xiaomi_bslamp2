@@ -184,3 +184,9 @@ text_sensor:
       name: ${text_sensor_ssid}
     bssid:
       name: ${text_sensor_bssid}
+      
+# Switches
+switch:
+# Restart ESP
+  - platform: restart
+    name: ${switch_restart}
