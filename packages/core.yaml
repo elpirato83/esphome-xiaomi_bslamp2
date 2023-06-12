@@ -8,6 +8,12 @@ substitutions:
   friendly_name: Bedside Lamp
   light_name: ${friendly_name} RGBWW Light
   light_mode_text_sensor_name: ${friendly_name} Light Mode
+  text_sensor_version: ${friendly_name} - ESPHome Version
+  text_sensor_ip: ${friendly_name} - IP
+  text_sensor_ssid: ${friendly_name} - SSID
+  text_sensor_bssid: ${friendly_name} - BSSID
+  sensor_uptime: ${friendly_name} - Uptime
+  sensor_wifi_signal: ${friendly_name} - WiFi Signal
   default_transition_length: 800ms
 
 # --------------------------------------------------------------------------
